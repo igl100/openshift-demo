@@ -11,5 +11,5 @@ http.createServer(function handler(req, res) {
     
     servePublic(req, res, function nextHandler(req, res){
     });    
-}).listen(8080, '127.0.0.1');
+}).listen(1337, '127.0.0.1');
 console.log('Server running at http://127.0.0.1:1337/');
