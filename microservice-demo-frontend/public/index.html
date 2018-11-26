@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div id='content' ng-app='MyAngularApp' ng-controller='MainController'>
+	 <p>    <a ng-click="postIt()">Click aqui para buscar.</a></p>
+	 Resultados encontrados {{testData.length}}. Lista:
+  <ul>
+    <li ng-repeat="item in testData">
+      {{item.idAtributo}} con atributo {{item.atributo}}.
+    </li>
+    <li ng-if="testData.length === 0">
+      <strong>Sin resultados...</strong>
+    </li>
+  </ul>
+	</div>	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
+	<script src="app.js" type="text/javascript"></script>
+	<script src="maincontroller.js" type="text/javascript"></script>
+</body>
+</html>
