@@ -4,7 +4,7 @@ app.controller("MainController", function MainController($scope, $http){
 	$scope.postIt = function() {
 		$http({
 		      method: 'GET',
-		      url: 'http://micriservice-demo:8080/services/rest/getall'
+		      url: 'http://microservice-demo:8080/services/rest/getall'
 		   }).then(function (response){
 			   console.log(response);
 		       $scope.testData = response.data;
