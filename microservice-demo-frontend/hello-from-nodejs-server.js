@@ -14,6 +14,7 @@ var server = http.createServer(function handler(req, res) {
     
     servePublic(req, res, function nextHandler(req, res){
     });    
+    
 });
 server.listen(server_port, server_ip_address);
 console.log('Server running at http://'+server_ip_address+':'+server_port);

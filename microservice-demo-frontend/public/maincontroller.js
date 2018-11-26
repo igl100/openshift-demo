@@ -1,6 +1,7 @@
 
 app.controller("MainController", function MainController($scope, $http){
 	$scope.testData =[];
+	
 	$scope.postIt = function() {
 		$http({
 		      method: 'GET',
